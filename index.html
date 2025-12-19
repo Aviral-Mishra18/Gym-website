@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iron Pulse Gym | Build Your Body</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="logo">IRON <span>PULSE</span></div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#plans">Plans</a></li>
+            <li><a href="#bmi">BMI Calculator</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>BUILD YOUR <span class="highlight">PERFECT BODY</span></h1>
+            <p>Certified trainers, modern equipment, and a community that pushes you.</p>
+            <div class="cta-buttons">
+                <a href="#plans" class="btn">Join Now</a>
+                <a href="#tour" class="btn btn-secondary">Virtual Tour</a>
+            </div>
+        </div>
+        <!-- Feature 1: Member Counter -->
+        <div class="member-counter">
+            <div class="counter-item">
+                <span class="counter-number" data-target="5000">0</span>
+                <p>Active Members</p>
+            </div>
+            <div class="counter-item">
+                <span class="counter-number" data-target="50">0</span>
+                <p>Expert Trainers</p>
+            </div>
+            <div class="counter-item">
+                <span class="counter-number" data-target="100">0</span>
+                <p>Classes/Week</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Feature 2: Quick Stats Section -->
+    <section id="stats" class="section stats-section">
+        <h2 class="section-title">Track Your Achievements</h2>
+        <div class="stats-grid">
+            <div class="stat-box">
+                <div class="stat-icon">💪</div>
+                <h3>Avg. Muscle Gain</h3>
+                <p class="stat-value">8.5 kg</p>
+                <p class="stat-description">Member Average</p>
+            </div>
+            <div class="stat-box">
+                <div class="stat-icon">⚡</div>
+                <h3>Strength Increase</h3>
+                <p class="stat-value">35%</p>
+                <p class="stat-description">In 3 Months</p>
+            </div>
+            <div class="stat-box">
+                <div class="stat-icon">🏃</div>
+                <h3>Avg. Workouts</h3>
+                <p class="stat-value">4.2x/week</p>
+                <p class="stat-description">Member Average</p>
+            </div>
+            <div class="stat-box">
+                <div class="stat-icon">😊</div>
+                <h3>Satisfaction Rate</h3>
+                <p class="stat-value">98%</p>
+                <p class="stat-description">Member Rating</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="plans" class="section">
+        <h2 class="section-title">Membership Plans</h2>
+        <!-- Feature 3: Plan Toggle -->
+        <div class="plan-toggle">
+            <span>Monthly</span>
+            <input type="checkbox" id="plan-toggle" class="toggle-checkbox">
+            <span>Yearly <span class="save-badge">Save 20%</span></span>
+        </div>
+        <div class="grid-container">
+            <div class="card">
+                <h3>Basic</h3>
+                <p class="price"><span class="price-monthly">₹999</span><span class="price-yearly"
+                        style="display:none;">₹9,990</span><span class="price-unit">/mo</span></p>
+                <ul>
+                    <li>Gym Access</li>
+                    <li>Locker Room</li>
+                    <li>Basic Support</li>
+                    <li class="yearly-feature" style="display:none;">+ 1 Free Personal Training Session (Yearly)</li>
+                    <li class="yearly-feature" style="display:none;">+ Free Nutrition Plan (Yearly)</li>
+                </ul>
+                <button class="btn-alt select-plan">Select Plan</button>
+            </div>
+            <div class="card featured">
+                <h3>Standard</h3>
+                <p class="price"><span class="price-monthly">₹1499</span><span class="price-yearly"
+                        style="display:none;">₹14,990</span><span class="price-unit">/mo</span></p>
+                <ul>
+                    <li>Gym + Cardio</li>
+                    <li>Group Classes</li>
+                    <li>Priority Support</li>
+                    <li>Progress Reports</li>
+                    <li class="yearly-feature" style="display:none;">+ 2 Free Personal Training Sessions (Yearly)</li>
+                    <li class="yearly-feature" style="display:none;">+ Quarterly Progress Review (Yearly)</li>
+                </ul>
+                <button class="btn select-plan">Select Plan</button>
+            </div>
+            <div class="card">
+                <h3>Premium</h3>
+                <p class="price"><span class="price-monthly">₹1999</span><span class="price-yearly"
+                        style="display:none;">₹19,990</span><span class="price-unit">/mo</span></p>
+                <ul>
+                    <li>All Access</li>
+                    <li>Personal Trainer</li>
+                    <li>Nutrition Plan</li>
+                    <li>VIP Support 24/7</li>
+                    <li class="yearly-feature" style="display:none;">+ 8 Free Personal Training Sessions (Yearly)</li>
+                    <li class="yearly-feature" style="display:none;">+ 4 Guest Passes (Yearly)</li>
+                </ul>
+                <button class="btn-alt select-plan">Select Plan</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Feature 4: Class Schedule Section -->
+    <section id="schedule" class="section">
+        <h2 class="section-title">Weekly Class Schedule</h2>
+        <div class="schedule-container">
+            <div class="day-schedule">
+                <h3>Monday</h3>
+                <div class="class-item">
+                    <span class="class-time">06:00 AM</span>
+                    <span class="class-name">🏋️ Strength Training</span>
+                    <span class="class-trainer">Coach Raj</span>
+                </div>
+                <div class="class-item">
+                    <span class="class-time">05:00 PM</span>
+                    <span class="class-name">🥊 Boxing Basics</span>
+                    <span class="class-trainer">Coach Mike</span>
+                </div>
+            </div>
+            <div class="day-schedule">
+                <h3>Wednesday</h3>
+                <div class="class-item">
+                    <span class="class-time">07:00 AM</span>
+                    <span class="class-name">🧘 Yoga Flow</span>
+                    <span class="class-trainer">Priya</span>
+                </div>
+                <div class="class-item">
+                    <span class="class-time">06:00 PM</span>
+                    <span class="class-name">💃 Zumba Party</span>
+                    <span class="class-trainer">Sofia</span>
+                </div>
+            </div>
+            <div class="day-schedule">
+                <h3>Friday</h3>
+                <div class="class-item">
+                    <span class="class-time">06:30 AM</span>
+                    <span class="class-name">🏃 HIIT Training</span>
+                    <span class="class-trainer">Coach Alex</span>
+                </div>
+                <div class="class-item">
+                    <span class="class-time">07:00 PM</span>
+                    <span class="class-name">💪 CrossFit</span>
+                    <span class="class-trainer">Coach Dave</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="bmi" class="section dark-bg">
+        <h2 class="section-title">Health & Fitness Calculator</h2>
+        <div class="calculator-container">
+            <!-- Feature 5: BMI Calculator -->
+            <div class="calculator-box">
+                <h3>BMI Calculator</h3>
+                <div class="bmi-box">
+                    <input type="number" id="weight" placeholder="Weight (kg)">
+                    <input type="number" id="height" placeholder="Height (cm)">
+                    <button onclick="calculateBMI()" class="btn">Calculate</button>
+                    <div id="bmi-result">
+                        <p>Your result will appear here.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Feature 6: Calorie Burn Calculator -->
+            <div class="calculator-box">
+                <h3>Calorie Burn Estimate</h3>
+                <div class="bmi-box">
+                    <input type="number" id="duration" placeholder="Duration (minutes)">
+                    <select id="activity">
+                        <option>Select Activity</option>
+                        <option>Running</option>
+                        <option>Cycling</option>
+                        <option>Swimming</option>
+                        <option>Weight Training</option>
+                        <option>Yoga</option>
+                    </select>
+                    <button onclick="calculateCalories()" class="btn">Calculate</button>
+                    <div id="calorie-result">
+                        <p>Estimate will appear here.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="section">
+        <h2 class="section-title">Our Services</h2>
+        <div class="grid-container">
+            <div class="service-card">
+                <div class="service-icon">🏋️</div>
+                <h3>Strength Training</h3>
+                <p>Build muscle and increase your power with our comprehensive training programs.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">🏃</div>
+                <h3>Cardio & Endurance</h3>
+                <p>Improve your cardiovascular health with our state-of-the-art cardio equipment.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">🧘</div>
+                <h3>Yoga & Flexibility</h3>
+                <p>Enhance flexibility and mental wellness through guided yoga sessions.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">👨‍🏫</div>
+                <h3>Personal Training</h3>
+                <p>One-on-one coaching from certified trainers tailored to your goals.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">🥗</div>
+                <h3>Nutrition Guidance</h3>
+                <p>Expert nutritionists help you plan meals for optimal fitness results.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">💪</div>
+                <h3>Group Classes</h3>
+                <p>Join energetic group sessions including CrossFit, Zumba, and more.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Feature 7: Expert Trainers Section -->
+    <section id="trainers" class="section dark-bg">
+        <h2 class="section-title">Meet Our Expert Trainers</h2>
+        <div class="trainers-container">
+            <div class="trainer-card">
+                <div class="trainer-image">👨‍🏫</div>
+                <h3>Coach Raj</h3>
+                <p class="trainer-specialty">Strength & Bodybuilding</p>
+                <p class="trainer-bio">15+ years of experience • Certified</p>
+                <button class="btn-small">Book Session</button>
+            </div>
+            <div class="trainer-card">
+                <div class="trainer-image">👩‍🏫</div>
+                <h3>Sofia Martinez</h3>
+                <p class="trainer-specialty">Cardio & HIIT</p>
+                <p class="trainer-bio">12+ years of experience • Certified</p>
+                <button class="btn-small">Book Session</button>
+            </div>
+            <div class="trainer-card">
+                <div class="trainer-image">👨‍🏫</div>
+                <h3>Coach Mike</h3>
+                <p class="trainer-specialty">CrossFit & Functional</p>
+                <p class="trainer-bio">10+ years of experience • Certified</p>
+                <button class="btn-small">Book Session</button>
+            </div>
+            <div class="trainer-card">
+                <div class="trainer-image">👩‍⚕️</div>
+                <h3>Dr. Priya</h3>
+                <p class="trainer-specialty">Nutrition & Wellness</p>
+                <p class="trainer-bio">Dietitian • M.S. Nutrition</p>
+                <button class="btn-small">Book Session</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Feature 8: Transformation Gallery -->
+    <section id="gallery" class="section">
+        <h2 class="section-title">Member Transformations</h2>
+        <p class="section-subtitle">Real Results from Real Members</p>
+        <div class="gallery-container">
+            <!-- Card 1: Arjun (Face: 3in0d93in0d93in0) -->
+            <div class="gallery-item">
+                <div class="before-after">
+                    <div class="before">
+                        <img loading="lazy" src="images/Gemini_Generated_Image_3in0d93in0d93in0.png" alt="Before Arjun">
+                    </div>
+                    <div class="after">
+                        <img loading="lazy" src="images/Gemini_Generated_Image_3l2exj3l2exj3l2e.png" alt="After Arjun">
+                    </div>
+                </div>
+                <p><strong>Arjun</strong><br>25kg Lost</p>
+            </div>
+
+            <!-- Card 2: Neha (Face: 5c3xxa5c3xxa5c3x) -->
+            <div class="gallery-item">
+                <div class="before-after">
+                    <div class="before">
+                        <img loading="lazy" src="images/Gemini_Generated_Image_88e4o088e4o088e4.png" alt="Before Neha">
+                    </div>
+                    <div class="after">
+                        <img loading="lazy" src="images/Gemini_Generated_Image_bq3dv5bq3dv5bq3d.png" alt="After Neha">
+                    </div>
+                </div>
+                <p><strong>Neha</strong><br>8kg Muscle Gain</p>
+            </div>
+
+            <!-- Card 3: Rahul (Face: bq3dv5bq3dv5bq3d) -->
+            <div class="gallery-item">
+                <div class="before-after">
+                    <div class="before">
+                        <img loading="lazy" src="images/Gemini_Generated_Image_bs0382bs0382bs03.png" alt="Before Rahul">
+                    </div>
+                    <div class="after">
+                        <img loading="lazy" src="images/Gemini_Generated_Image_layiislayiislayi.png" alt="After Rahul">
+                    </div>
+                </div>
+                <p><strong>Rahul</strong><br>6-Pack Result</p>
+            </div>
+
+            <!-- Card 4: Pooja (Face: j68hhcj68hhcj68h) -->
+            <div class="gallery-item">
+                <div class="before-after">
+                    <div class="before">
+                        <img loading="lazy" src="images/Gemini_Generated_Image_j68hhcj68hhcj68h - Copy.png"
+                            alt="Before Pooja">
+                    </div>
+                    <div class="after">
+                        <img loading="lazy" src="images/Gemini_Generated_Image_5c3xxa5c3xxa5c3x (1).png"
+                            alt="After Pooja">
+                    </div>
+                </div>
+                <p><strong>Pooja</strong><br>Strength x3</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials" class="section dark-bg">
+        <h2 class="section-title">Success Stories</h2>
+        <div class="testimonials-container">
+            <div class="testimonial">
+                <p>"Iron Pulse transformed my life! I've gained incredible strength and confidence."</p>
+                <h4>- Rajesh Kumar</h4>
+            </div>
+            <div class="testimonial">
+                <p>"The trainers are amazing! They push you to achieve your best while keeping it fun."</p>
+                <h4>- Priya Sharma</h4>
+            </div>
+            <div class="testimonial">
+                <p>"Best investment ever. The community support is unmatched!"</p>
+                <h4>- Arjun Singh</h4>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="section">
+        <h2 class="section-title">Why Choose Iron Pulse?</h2>
+        <div class="about-content">
+            <div class="about-box">
+                <h3>🎯 Expert Trainers</h3>
+                <p>Certified fitness professionals with years of experience helping members reach their goals.</p>
+            </div>
+            <div class="about-box">
+                <h3>🏆 Modern Equipment</h3>
+                <p>Latest fitness technology and equipment imported from leading manufacturers worldwide.</p>
+            </div>
+            <div class="about-box">
+                <h3>🤝 Community Support</h3>
+                <p>Join a supportive community of fitness enthusiasts who motivate and inspire each other daily.</p>
+            </div>
+            <div class="about-box">
+                <h3>📊 Progress Tracking</h3>
+                <p>Advanced monitoring tools to track your fitness journey and celebrate milestones.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <h2 class="section-title">Join Now</h2>
+        <!-- Feature 9: Quick Benefits Checklist -->
+        <div class="benefits-preview">
+            <h3>What You Get:</h3>
+            <div class="benefits-list">
+                <div class="benefit-item">✅ 24/7 Gym Access</div>
+                <div class="benefit-item">✅ Personal Training</div>
+                <div class="benefit-item">✅ Group Classes</div>
+                <div class="benefit-item">✅ Nutrition Planning</div>
+                <div class="benefit-item">✅ Progress Tracking</div>
+                <div class="benefit-item">✅ Community Support</div>
+            </div>
+        </div>
+        <form id="joinForm" class="contact-form">
+            <input type="text" placeholder="Full Name" required>
+            <input type="email" placeholder="Email Address" required>
+            <input type="tel" placeholder="Phone Number" required>
+            <select required>
+                <option value="">Select Plan</option>
+                <option>Basic</option>
+                <option>Standard</option>
+                <option>Premium</option>
+            </select>
+            <textarea placeholder="Message (Optional)" rows="4"></textarea>
+            <button type="submit" class="btn">Submit Application</button>
+        </form>
+    </section>
+
+    <!-- Feature 10: Workout Tips Section -->
+    <section id="tips" class="section dark-bg">
+        <h2 class="section-title">Fitness Tips & Tricks</h2>
+        <div class="tips-container">
+            <div class="tip-card">
+                <div class="tip-icon">💧</div>
+                <h3>Stay Hydrated</h3>
+                <p>Drink 8-10 glasses of water daily for optimal performance and recovery.</p>
+            </div>
+            <div class="tip-card">
+                <div class="tip-icon">😴</div>
+                <h3>Get Quality Sleep</h3>
+                <p>7-8 hours of sleep helps muscle recovery and boosts metabolism.</p>
+            </div>
+            <div class="tip-card">
+                <div class="tip-icon">🥗</div>
+                <h3>Balanced Diet</h3>
+                <p>Eat protein, carbs, and healthy fats for sustained energy.</p>
+            </div>
+            <div class="tip-card">
+                <div class="tip-icon">⏱️</div>
+                <h3>Consistency Wins</h3>
+                <p>Regular training 4-5x weekly gives better results than sporadic intense sessions.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Feature 11: FAQ Section -->
+    <section id="faq" class="section">
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <div class="faq-container">
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>Can I change my membership plan anytime?</span>
+                    <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer" style="display: none;">
+                    <p>Yes, you can upgrade or downgrade your plan anytime. Changes take effect from the next billing
+                        cycle.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>Do you offer trial sessions?</span>
+                    <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer" style="display: none;">
+                    <p>Absolutely! We offer a free 1-day trial pass for new members to experience our facilities.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>What's your cancellation policy?</span>
+                    <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer" style="display: none;">
+                    <p>Cancel anytime with 30 days notice. No hidden charges or penalties.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>Are personal trainers included in membership?</span>
+                    <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer" style="display: none;">
+                    <p>Personal trainers are included in Premium plans and available as add-ons for other plans.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Feature 12: Newsletter Signup -->
+    <section class="newsletter-section">
+        <h2>Get Fitness Tips Delivered</h2>
+        <p>Subscribe to our weekly newsletter for workout tips, nutrition advice, and exclusive offers!</p>
+        <form class="newsletter-form" onsubmit="subscribeNewsletter(event)">
+            <input type="email" placeholder="Enter your email" required>
+            <button type="submit" class="btn">Subscribe</button>
+        </form>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Iron Pulse Gym</h4>
+                <p>Building strong bodies and strong minds since 2020.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#plans">Plans</a></li>
+                    <li><a href="#bmi">BMI Calculator</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contact Info</h4>
+                <p>📍 123 Fitness Lane, Gym City</p>
+                <p>📞 +91-9876543210</p>
+                <p>✉️ info@ironpulse.com</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Iron Pulse Gym. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
